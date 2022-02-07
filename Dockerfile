@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 
-COPY . .
+ADD main.py /main.py
 
 RUN chmod +x main.py
 

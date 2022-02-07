@@ -1,7 +1,8 @@
 FROM ubuntu:latest
 
-ADD main.py /main.py
+COPY entrypoint.sh /entrypoint.sh
 
-RUN chmod +x main.py
+RUN chmod +x entry.sh
 
-CMD [ "python", "./main.py"]
+ENTRYPOINT ["./entrypoint.sh"]
+

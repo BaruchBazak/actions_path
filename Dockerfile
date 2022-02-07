@@ -1,8 +1,8 @@
 FROM ubuntu:latest
 
-COPY entrypoint.sh /entrypoint.sh
+COPY entrypoint.sh /bin/entrypoint.sh
 
 RUN chmod +x entrypoint.sh
 
-ENTRYPOINT ["./entrypoint.sh"]
+ENTRYPOINT ["entrypoint.sh"]
 
